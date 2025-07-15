@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
+    "scheme": "criminal-intent",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -26,7 +27,8 @@
           "photosPermission": "The app accesses your photos to let you add crime scene evidence."
         }
       ],
-      "expo-font"
+      "expo-font",
+      "expo-router"
     ]
   }
 }

@@ -1,3 +1,4 @@
+// src/contexts/ThemeContext.tsx
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -16,6 +17,7 @@ export interface Theme {
   };
 }
 
+// Simplified theme options - fewer themes, cleaner structure
 export const themes: Theme[] = [
   {
     id: 'light',
@@ -46,20 +48,6 @@ export const themes: Theme[] = [
     },
   },
   {
-    id: 'green',
-    name: 'Forest Green',
-    isDark: false,
-    colors: {
-      background: '#F8FFF8',
-      surface: '#F0FFF0',
-      primary: '#228B22',
-      text: '#1A1A1A',
-      textSecondary: '#4A4A4A',
-      border: '#90EE90',
-      accent: '#FF4500',
-    },
-  },
-  {
     id: 'dark',
     name: 'Dark',
     isDark: true,
@@ -74,7 +62,7 @@ export const themes: Theme[] = [
     },
   },
   {
-    id: 'darkBlue',
+    id: 'midnight',
     name: 'Midnight Blue',
     isDark: true,
     colors: {
@@ -85,20 +73,6 @@ export const themes: Theme[] = [
       textSecondary: '#B8C5D1',
       border: '#415A77',
       accent: '#F77F00',
-    },
-  },
-  {
-    id: 'darkPurple',
-    name: 'Deep Purple',
-    isDark: true,
-    colors: {
-      background: '#1A0E2E',
-      surface: '#2D1B69',
-      primary: '#9D4EDD',
-      text: '#FFFFFF',
-      textSecondary: '#C8A2C8',
-      border: '#5A4FCF',
-      accent: '#FFB3BA',
     },
   },
 ];
